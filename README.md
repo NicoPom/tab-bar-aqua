@@ -24,14 +24,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/NicoPom/tab-bar-aqua">
+  <!-- <a href="https://github.com/NicoPom/tab-bar-aqua">
     <img src="public/images/favicon.svg" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
-<h3 align="center">2023 PORTFOLIO</h3>
+<h3 align="center">TAB BAR AQUA</h3>
 
   <p align="center">
-    Nicolas Pomares 2023 Frontend Portfolio
+    An interactive tab bar
     <br />
     <br />
     <a href="https://tabbaraqua.netlify.app/">View Demo</a>
