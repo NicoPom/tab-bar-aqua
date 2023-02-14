@@ -1,0 +1,108 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*variables*/
+
+:root {
+  --primary-color: #00d5ff;
+  --secondary-color: #55615e;
+  --tertiary-color: #2d2727;
+}
+
+/*global styles*/
+body,
+#app {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+#app {
+  display: grid;
+  place-content: center;
+}
+
+nav {
+  background-color: var(--tertiary-color);
+  padding: 1.5em 3em;
+  border-radius: 1.5em;
+}
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link {
+  cursor: pointer;
+  fill: #fff;
+  position: relative;
+}
+
+/* BLOB */
+
+.blob {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 40%;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.blob::before,
+.blob::after {
+  content: "";
+  width: 30%;
+  height: 30%;
+  background-color: var(--tertiary-color);
+  position: absolute;
+  top: 38%;
+  border-top: 6px solid var(--secondary-color);
+}
+
+.blob::before {
+  left: 0;
+  transform: translate(-54%, 0%);
+  border-right: 6px solid var(--secondary-color);
+  border-top-right-radius: 100%;
+}
+
+.blob::after {
+  right: 0;
+  transform: translate(54%, 0%);
+  border-left: 6px solid var(--secondary-color);
+  border-top-left-radius: 100%;
+}
+
+/* BALL */
+
+.ball {
+  position: absolute;
+  /* top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -125%);
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  /*glow effect*/
+  box-shadow: 0 0 20px var(--primary-color);
+  /*biger glow*/
+}
